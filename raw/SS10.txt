@@ -1,0 +1,137 @@
+========================================================================
+  XDF INSPECTOR - XDF File Analysis
+========================================================================
+  File     : D:\Minh\SSVEP-BCI-Test\raw\SS10.xdf
+  Size     : 6.58 MB
+  Modified : 2026-02-17 11:12:00
+
+  Loading XDF file...
+  Loaded successfully!
+
+
+------------------------------------------------------------------------
+  FILE HEADER
+------------------------------------------------------------------------
+  XDF Version : 1.0
+
+------------------------------------------------------------------------
+  OVERVIEW: 2 stream(s) found
+------------------------------------------------------------------------
+
+  Type                      Count
+  -------------------- ----------
+  EEG / Data                    1
+  Markers / Events              1
+
+------------------------------------------------------------------------
+  STREAM #1: EventMarkers
+------------------------------------------------------------------------
+  Stream ID               : 2
+  Name                    : EventMarkers
+  Type                    : Markers
+  Channels                : 1
+  Format                  : string
+  Nominal Srate (Hz)      : 0.000000000000000
+  Effective Srate (Hz)    : 0.1639
+  Samples                 : 48
+  Duration                : 04:46.733
+  Source ID               : Event_00001
+  Hostname                : UTS-5CD436GDDD
+  Created at              : 430647.8291302000
+  First Timestamp         : 430690.219402
+  Last Timestamp          : 430976.952410
+
+  Marker Contents:
+    Total markers   : 48
+    Unique markers  : 48
+
+    Marker                              Count
+    ------------------------------ ----------
+    Start1                                  1
+    Start10                                 1
+    Start11                                 1
+    Start12                                 1
+    Start13                                 1
+    Start14                                 1
+    Start15                                 1
+    Start16                                 1
+    Start17                                 1
+    Start18                                 1
+    Start19                                 1
+    Start2                                  1
+    Start20                                 1
+    Start21                                 1
+    Start22                                 1
+    Start23                                 1
+    Start24                                 1
+    Start3                                  1
+    Start4                                  1
+    Start5                                  1
+    Start6                                  1
+    Start7                                  1
+    Start8                                  1
+    Start9                                  1
+    Stop1                                   1
+    Stop10                                  1
+    Stop11                                  1
+    Stop12                                  1
+    Stop13                                  1
+    Stop14                                  1
+    Stop15                                  1
+    Stop16                                  1
+    Stop17                                  1
+    Stop18                                  1
+    Stop19                                  1
+    Stop2                                   1
+    Stop20                                  1
+    Stop21                                  1
+    Stop22                                  1
+    Stop23                                  1
+    Stop24                                  1
+    Stop3                                   1
+    Stop4                                   1
+    Stop5                                   1
+    Stop6                                   1
+    Stop7                                   1
+    Stop8                                   1
+    Stop9                                   1
+
+------------------------------------------------------------------------
+  STREAM #2: DEEG_v1
+------------------------------------------------------------------------
+  Stream ID               : 1
+  Name                    : DEEG_v1
+  Type                    : EEG
+  Channels                : 8
+  Format                  : float32
+  Nominal Srate (Hz)      : 500.0000000000000
+  Effective Srate (Hz)    : 499.7832
+  Samples                 : 167,700
+  Duration                : 05:35.544
+  Source ID               : DEEG_00001
+  Hostname                : UTS-5CD436GDDD
+  Created at              : 430647.8204196000
+  First Timestamp         : 430657.515031
+  Last Timestamp          : 430993.058544
+
+  Data Statistics:
+    Shape               : (167700, 8)
+    Dtype               : float32
+    Min                 : -90349.296875
+    Max                 : -36963.410156
+    Mean                : -72786.625000
+    Std                 : 16319.178711
+
+------------------------------------------------------------------------
+  TIMING OVERVIEW
+------------------------------------------------------------------------
+  Total recording duration : 05:35.544
+  Earliest timestamp       : 430657.515031
+  Latest timestamp         : 430993.058544
+
+  Stream Timeline:
+  # 1 EventMarkers         |...###################################..| 04:46.733
+  # 2 DEEG_v1              |########################################| 05:35.544
+========================================================================
+  Inspection complete!
+========================================================================

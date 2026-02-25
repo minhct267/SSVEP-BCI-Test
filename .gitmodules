@@ -1,0 +1,3 @@
+[submodule "meegkit"]
+	path = meegkit
+	url = https://github.com/nbara/python-meegkit.git
