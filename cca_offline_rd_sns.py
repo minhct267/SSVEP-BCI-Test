@@ -195,10 +195,10 @@ def run_cca_offline_rd_sns(
         try:
             eeg_rd, weights, basis_mat = robust_detrend(
                 eeg_data,
-                order=3,
+                order=5,
                 basis="polynomials",
-                threshold=3,
-                n_iter=4,
+                threshold=2,
+                n_iter=6,
                 show=False,
             )
         except Exception as e:
@@ -208,7 +208,7 @@ def run_cca_offline_rd_sns(
         # Apply SNS on detrended EEG
         try:
             X = eeg_rd[:, :, None]  # (n_samples, n_chans, 1)
-            eeg_rd_sns, sns_matrix = sns_denoise(X, n_neighbors=7, skip=0)
+            eeg_rd_sns, sns_matrix = sns_denoise(X, n_neighbors=6, skip=1)
             eeg_rd_sns = eeg_rd_sns[:, :, 0]
         except Exception as e:
             print(f"  [WARNING] SNS failed for {xdf_path}: {e}")
